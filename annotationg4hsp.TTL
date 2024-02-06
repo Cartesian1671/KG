@@ -1,0 +1,128 @@
+@prefix ns0: <https://w3id.org/biolink/vocab/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://w3id.org/biolink/infores/knowledge-collaboratory>
+  a <https://w3id.org/biolink/vocab/InformationResource> ;
+  ns0:category "biolink:InformationResource"^^xsd:string ;
+  ns0:id "infores:knowledge-collaboratory"^^xsd:string .
+
+<https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c0a177-7d62-4bcf-9fce-7dd484cda4d5>
+  a ns0:Publication ;
+  ns0:category "biolink:Publication"^^xsd:string ;
+  ns0:id "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c0a177-7d62-4bcf-9fce-7dd484cda4d5"^^xsd:string .
+
+<http://identifiers.org/umls/C1160689>
+  a ns0:OrganismTaxon ;
+  rdfs:label "viruses genomes"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "UMLS:C1160689"^^xsd:string .
+
+<http://identifiers.org/pubchem.compound/51346143>
+  a ns0:ChemicalEntity ;
+  rdfs:label "guanines"^^xsd:string ;
+  ns0:category "biolink:ChemicalEntity"^^xsd:string ;
+  ns0:id "PUBCHEM.COMPOUND:51346143"^^xsd:string .
+
+<http://identifiers.org/umls/C0162326>
+  a ns0:ChemicalEntity ;
+  rdfs:label "DNA sequences"^^xsd:string ;
+  ns0:category "biolink:ChemicalEntity"^^xsd:string ;
+  ns0:id "UMLS:C0162326"^^xsd:string .
+
+<http://identifiers.org/umls/C1515655>
+  a ns0:OrganismTaxon ;
+  rdfs:label "in vivo"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "UMLS:C1515655"^^xsd:string .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_11676>
+  a ns0:OrganismTaxon ;
+  rdfs:label "Human immunodeficiency virus (HIV-1)"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "NCBITaxon:11676"^^xsd:string .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10376>
+  a ns0:OrganismTaxon ;
+  rdfs:label "Epstein–Barr virus (EBV)"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "NCBITaxon:10376"^^xsd:string .
+
+<http://id.nlm.nih.gov/mesh/D000094302>
+  a ns0:OrganismTaxon ;
+  rdfs:label "papillomavirus (HPV)"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "MESH:D000094302"^^xsd:string .
+
+<http://identifiers.org/umls/C0034865>
+  a ns0:GeneProduct ;
+  rdfs:label "recombination"^^xsd:string ;
+  ns0:category "biolink:GeneProduct"^^xsd:string ;
+  ns0:id "UMLS:C0034865"^^xsd:string .
+
+<http://www.reactome.org/PathwayBrowser/#/R-BTA-9623433>
+  a ns0:GeneProduct ;
+  rdfs:label "gene expression control"^^xsd:string ;
+  ns0:category "biolink:GeneProduct"^^xsd:string ;
+  ns0:id "REACT:R-BTA-9623433"^^xsd:string .
+
+<http://identifiers.org/umls/C1567953>
+  a ns0:ChemicalEntity ;
+  rdfs:label "DNA aptamers"^^xsd:string ;
+  ns0:category "biolink:ChemicalEntity"^^xsd:string ;
+  ns0:id "UMLS:C1567953"^^xsd:string .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_208726>
+  a ns0:OrganismTaxon ;
+  rdfs:label "hepatitis A virus (HAV)"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "NCBITaxon:208726"^^xsd:string .
+
+<http://identifiers.org/umls/C1456463>
+  a ns0:OrganismTaxon ;
+  rdfs:label "cauliflower mosaic virus (CaMV)"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "UMLS:C1456463"^^xsd:string .
+
+<http://identifiers.org/umls/C5698146>
+  a ns0:OrganismTaxon ;
+  rdfs:label "severe acute respiratory syndrome virus (SARS)"^^xsd:string ;
+  ns0:category "biolink:OrganismTaxon"^^xsd:string ;
+  ns0:id "UMLS:C5698146"^^xsd:string .
+
+<http://id.nlm.nih.gov/mesh/D000998>
+  a ns0:ChemicalEntity ;
+  rdfs:label "antiviral agents"^^xsd:string ;
+  ns0:category "biolink:ChemicalEntity"^^xsd:string ;
+  ns0:id "MESH:D000998"^^xsd:string .
+
+[]
+  a ns0:Association ;
+  rdf:object <http://identifiers.org/umls/C1160689> ;
+  rdf:predicate ns0:affects ;
+  rdf:subject <http://identifiers.org/pubchem.compound/51346143> ;
+  ns0:aggregator_knowledge_source <https://w3id.org/biolink/infores/knowledge-collaboratory> ;
+  ns0:category "biolink:Association"^^xsd:string ;
+  ns0:id "collaboratory:PUBCHEM.COMPOUND:51346143-biolink:affects-UMLS:C1160689"^^xsd:string ;
+  ns0:publications <https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c0a177-7d62-4bcf-9fce-7dd484cda4d5> .
+
+[]
+  a ns0:Association ;
+  rdf:object <http://identifiers.org/pubchem.compound/51346143> ;
+  rdf:predicate ns0:caused_by ;
+  rdf:subject <http://identifiers.org/umls/C0162326> ;
+  ns0:aggregator_knowledge_source <https://w3id.org/biolink/infores/knowledge-collaboratory> ;
+  ns0:category "biolink:Association"^^xsd:string ;
+  ns0:id "collaboratory:UMLS:C0162326-biolink:caused_by-PUBCHEM.COMPOUND:51346143"^^xsd:string ;
+  ns0:publications <https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c0a177-7d62-4bcf-9fce-7dd484cda4d5> .
+
+[]
+  a ns0:Association ;
+  rdf:object <http://identifiers.org/umls/C0162326> ;
+  rdf:predicate ns0:has_evidence ;
+  rdf:subject <http://identifiers.org/umls/C0017429> ;
+  ns0:aggregator_knowledge_source <https://w3id.org/biolink/infores/knowledge-collaboratory> ;
+  ns0:category "biolink:Association"^^xsd:string ;
+  ns0:id "collaboratory:UMLS:C0017429-biolink:has_evidence-UMLS:C0162326"^^xsd:string ;
+  ns0:publications <https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c0a177-7d62-4bcf-9fce-7dd484cda4d5> .
